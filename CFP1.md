@@ -67,7 +67,7 @@ See the full set of instructions at https://ssn2018.github.io/#submission
 PUBLICATION
 =======================================
 
-Accepted papers will be published jointly as SSN and SWIT CEUR workshop proceedings. At least one author of each accepted paper must register for the conference and present the paper there.
+Accepted papers will be published as CEUR workshop proceedings. At least one author of each accepted paper must register for the conference and present the paper there.
 
 
 IMPORTANT DATES
@@ -94,29 +94,3 @@ STEERING COMMITTEE
 - Amit Sheth, Knowledge-enabled Computing (Kno.e.sis), Wright State University, Ohio, U.S.
 - Manfred Hauswirth, Fraunhofer Institute for Open Communication Systems, Berlin, Germany, Open Distributed Systems at the Technical University of Berlin, Germany
 - Kerry Taylor, Australian National University and University of Surrey, UK
-
-
-PROGRAM COMMITTEE
-=======================================
-
-- Dr Payam Barnaghi, University of Surrey, UK
-- Dr Maria Bermudez-Edo, University of Granada, Spain
-- Dr Boyan Brodaric, Geological Survey of Canada, Canada
-- Dr Jean-Paul Calbimonte, University of Applied Sciences and Arts, Western Switzerland, Switzerland
-- Prof Oscar Corcho, Universidad Politécnica de Madrid, Spain (ex-chair)
-- Dr David Corsar, University of Aberdeen, UK
-- Dr Simon Cox, CSIRO, Australia
-- Dr Armin Haller, Australian National University, Australia
-- Dr Andreas Harth, AIFB, Karlsruhe, Germany
-- Dr Cory Henson, Bosch, USA (ex-chair)
-- Ms Utkarsani Jaimi, Kno.e.sis-Wright State University, USA
-- Dr Krzysztof Janowicz, University of California, Santa Barbara, USA (ex-chair)
-- Dr Sebastian Kaebisch, Siemens AG, Germany
-- Dr Joshua Lieberman, Tumbling Wall, USA
-- Dr Pankesh Patel, Fraunhofer-USA, USA
-- Dr Danh le Phuoc, TU Berlin, Germany
-- Dr Prem Prakash Jayaraman, Swinburne Institute of Technology, Australia
-- Dr Catherine Roussey, Irstea, France
-- Dr Xiang Su, University of Oulu, Finland
-- Dr Antoine Zimmermann, Mines Saint-Étienne, France
-
