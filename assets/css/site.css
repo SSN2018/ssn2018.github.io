@@ -1,3 +1,7 @@
+a {
+  color:#e30713; 
+}
+
 .section {
   padding-top:170px;
   padding-bottom:20px;
@@ -36,6 +40,15 @@ h2 a {
 
 ul li {
   font-weight: 100;
+}
+
+figure {
+    border: none;
+}
+
+figure figcaption {
+    border: none;
+    text-align: center;
 }
 
 @media screen and (max-width: 594px) {
