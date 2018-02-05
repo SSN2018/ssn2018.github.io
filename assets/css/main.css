@@ -1,18 +1,18 @@
 /* 
  * 1. Google Font
  */
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Karla:300,400,700);
 /* 
  * 2.0 Global Style
  */
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-size: 16px;
 }
 
 body {
   color: #4e4e4e;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -308,7 +308,6 @@ ul li {
   min-height: 100vh;
   position: relative;
   text-align: center;
-  background: url(../images/backgrounds/header.jpg) no-repeat center center/cover;
   display: table;
 }
 .site-header::before {
