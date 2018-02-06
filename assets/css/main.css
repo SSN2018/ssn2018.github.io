@@ -282,22 +282,6 @@ ul li {
           transition: all 0.2s linear 0s;
 }
 
-.site-branding {
-  float: left;
-  margin-top: 0;
-  margin-left: 10px;
-}
-.site-branding .logo {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 700;
-  margin-right: 5px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-.site-branding .logo:focus, .site-branding .logo:hover {
-  text-decoration: none;
-}
 
 /* 
  * 5.0 Site Header
@@ -331,6 +315,7 @@ ul li {
   vertical-align: middle;
   height: 100vh;
 }
+
 .site-header .intro h2 {
   margin-top: 0px;
   font-size: 25px;
