@@ -17,24 +17,36 @@ h2 a {
 }
 
 .site-branding {
+  float: left;
+  margin-top: 0;
+  margin-left: 10px;
   display: inline-flex;
   flex-flow: row;
   justify-content: flex-start;
   align-items: center;
 }
 
-.logo-name {
+.site-branding .logo-name , .site-branding .logo-name .logo-name-name {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
   margin-left:20px;
   margin-right:20px;
   text-align: center;
 }
+.site-branding .logo-name:focus, .site-branding .logo-name:hover {
+  text-decoration: none;
+}
 
-.logo-img {
+.site-branding .logo-img {
+  margin-right: 5px;
   margin-left:20px;
   margin-right:20px;
 }
 
-.logo img {
+.site-branding .logo-img img {
   height: 100px;
 }
 
@@ -64,18 +76,28 @@ figure figcaption {
     width:calc(100% - 100px);
   }
 
-  .logo-name {
+  .logo-name-name {
     display: none;
   } 
 
-  .logo-img {
+  .site-branding .logo-img {
     margin-left:0px;
     margin-right:5px;
     text-align: center;
   }
-  .logo img {
+
+  .site-branding .logo-img img {
     height: 75px;
   }
+
+}
+
+
+@media screen and (max-width: 430px) {
+
+  .logo-name {
+    display: none;
+  } 
 
 }
 
@@ -88,7 +110,7 @@ figure figcaption {
     line-height: 20px;
   }
 
-  .logo img {
+  .site-branding .logo-img img {
     height: 75px;
   }
 }
