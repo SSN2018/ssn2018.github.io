@@ -1,8 +1,8 @@
-# CFP #1 
+# CFP #3 
 
 ## Title
 
-First CFP for SSN 2018: deadline 1 June 2018, at ISWC 2018
+Second call for SSN 2018: deadline 1 June 2018, at ISWC 2018
 
 ## Text
 
