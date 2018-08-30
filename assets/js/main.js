@@ -8,6 +8,7 @@ $(window).scroll(function(){
 
 $(window).load(function(){
 	handleTopNavAnimation();
+  $( "#accordion" ).accordion({header: "h4", collapsible: true, active: false});
 });
 
 function handleTopNavAnimation() {
