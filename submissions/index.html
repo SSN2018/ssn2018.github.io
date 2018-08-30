@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:xml="http://www.w3.org/1999/xhtml"  prefix='c4o: http://purl.org/spar/c4o/ cito: http://purl.org/spar/cito/ dcterms: http://purl.org/dc/terms/ fabio: http://purl.org/spar/fabio/ foaf: http://xmlns.com/foaf/0.1/ frbr: http://purl.org/vocab/frbr/core# prism: http://prismstandard.org/namespaces/basic/2.0/ rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# xsd: http://www.w3.org/2001/XMLSchema# oa: http://www.w3.org/ns/oa# pso: http://purl.org/spar/pso/ opri: https://ssn2018.github.io/OpenReviewInitiative.ttl#'>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="https://ssn2018.github.io/submissions/"/>
+
+    <title>SSN2018 Workshop - Open reviews</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/site.css">
+    <style>
+    p {
+      margin: 0 0 10px;
+    }
+    </style>
+
+</head>
+<body data-spy="scroll" data-target="#site-nav">
+    <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+        <div class="container">
+            <div class="navbar-header">
+
+                <div class="site-branding">
+                        <a class="logo-img" href="index.html"><img src="../assets/images/SSN2018.jpg" alt="Logo"></a>
+                        <span class="logo-name"><a class="logo-name-name" href="index.html">9<sup>th</sup> International Semantic Sensor Networks Workshop<br/></a> October 9<sup>th</sup> 2018</span>
+                </div>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div><!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <!-- navigation menu -->
+                    <li class="active"><a data-scroll href="../#about">About</a></li>
+                    <li><a data-scroll href="../#topics">Topics</a></li>
+                    <li><a data-scroll href="../#submission">Submission</a></li>                  
+                    <li><a data-scroll href="../#organization">Organization</a></li>                  
+                    <li><a data-scroll href="../#committee">Program Committee</a></li>                  
+
+                    <li class="active"><a data-scroll href="#open-reviews">Open reviews</a></li>                  
+                </ul>
+            </div>
+        </div><!-- /.container -->
+    </nav>
+
+    <header id="site-header" class="site-header valign-center"> 
+        <div class="intro">
+
+            
+            <h1>9<sup>th</sup> International Semantic Sensor Networks Workshop - SSN2018 - October 9<sup>th</sup> 2018</h1>
+            
+            <h2>held at the 17<sup>th</sup> International Semantic Web Conference <a style="color:white" href="http://iswc2018.semanticweb.org/"><img height="50" src="../assets/images/ISWC-logo-large.jpg" alt="ISWC 2018 workshop"/></a></h2>
+            
+            <div>Received submissions and Open Peer Reviews</div>
+
+        </div>
+    </header>
+
+
+    <section id="open-reviews" class="section">
+        <div class="container">
+            <div class="col-sm-12">
+
+
+                <h3>Open Peer Review</h3>
+
+                <p>For SSN 2018, reviewers were asked if they are willing to publish their review and potentially their name on the website of the conference. See <a href="https://opennessinitiative.org/">https://opennessinitiative.org/</a>. The final decision we the authors', which were asked to ask the following question:</p>
+                <p>Are you willing to encourage this open peer review initiative for SSN 2018?</p>
+                <ol>
+                    <li>Publish the submitted version and the reviews</li>
+                    <li>Publish the submitted version but not the reviews</li>
+                    <li>Publish  minimal information about the paper (title and authors, default choice)</li>
+                    <li>Do not publish anything about the paper</li>
+                </ol>
+
+                <p>This document contains RDFa annotations. A Turtle representation of these annotations is available at <a href="https://ssn2018.github.io/submissions/submissions.ttl">https://ssn2018.github.io/submissions/submissions.ttl</a></p>
+            </div> 
+        </div>
+    </section>
+
+                
+    <section id="overview" class="section"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3>Overview of Submissions to SSN2018</h3>
+
+                        <p>SSN 2018 received 11 submissions: 8 long papers, 2 short papers, 1 demo paper.</p>
+                        <ul>
+                            <li>4 long papers were accepted, 1 long paper was accepted conditionally, 1 long paper was accepted as a shortened version, 2 long papers were rejected.</li>
+                            <li>1 short paper was accepted, 1 short paper was accepted conditionally.</li>
+                            <li>1 demo paper was accepted.</li>
+                        </ul>
+                        <p>Table below sums up the scores of the papers</p>
+
+                        <table class="summary"><tbody><tr><td>#</td><td><span>authors, title</span></td><td>scores</td><td>avg</td><td>decision</td></tr>
+                        <tr><td><a name="1" href="#1">1</a></td><td><span>Samya Sagar, Maxime Lefrançois, Issam Rebai, Khemaja Maha, Serge Garlatti, Jamel Feki and Lionel Médini. </span><em>Modeling Smart Sensors on top of SOSA/SSN and WoT TD with the Semantic Smart Sensor Network (S3N) modular Ontology</em></td><td><b>0</b>,<b>3</b>,<b>3</b></td><td>2.0</td><td><b style="color:navy">ACCEPT LONG</b></td></tr>
+                        <tr><td><a name="10" href="#10">10</a></td><td><span>María Poveda-Villalón, Quang-Duy Nguyen, Catherine Roussey, Christophe de Vaulx and Jean-Pierre Chanet. </span><em>Ontological requirement specification for smart irrigation systems: a SOSA/SSN and SAREF comparison</em></td><td><b>2</b>,<b>2</b>,<b>1</b></td><td>1.7</td><td><b style="color:navy">ACCEPT LONG</b></td></tr>
+                        <tr><td><a name="2" href="#2">2</a></td><td><span>Victor Charpenay, Sebastian Käbisch and Harald Kosch. </span><em>A Framework for Semantic Discovery on the Web of Things</em></td><td><b>2</b>,<b>1</b>,<b>1</b></td><td>1.3</td><td><b style="color:navy">ACCEPT LONG</b></td></tr>
+                        <tr><td><a name="11" href="#11">11</a></td><td><span>Bram Steenwinckel, Pieter Heyvaert, Dieter De Paepe, Olivier Janssens, Sander Vanden Hautte, Anastasia Dimou, Filip De Turck, Sofie Van Hoecke and Femke Ongenae. </span><em>Towards Adaptive Anomaly Detection and Root Cause Analysis by Automated Extraction of Knowledge from Risk Analyses</em></td><td><b>1</b>,<b>2</b>,<b>1</b></td><td>1.3</td><td><b style="color:navy">ACCEPT LONG</b></td></tr>
+                        <tr><td><a name="8" href="#8">8</a></td><td><span>Mads Holten Rasmussen, Christian Aaskov Frausing, Christian Anker Hviid and Jan Karlshøj. </span><em>Integrating Building Information Modeling and Sensor Observations using Semantic Web</em></td><td><b>1</b>,<b>1</b></td><td>1.0</td><td><b style="color:navy">ACCEPT DEMO</b></td></tr>
+                        <tr><td><a name="4" href="#4">4</a></td><td><span>Benjamin Klotz, Raphaël Troncy, Daniel Wilms and Christian Bonnet. </span><em>VSSo: the Vehicle Signal and Attribute Ontology</em></td><td><b>1</b>,<b>0</b></td><td>0.5</td><td><b style="color:navy">ACCEPT AS SHORT</b></td></tr>
+                        <tr><td><a name="3" href="#3">3</a></td><td><span>Ilias Tachmazidis, Sotiris Batsakis, John Davies, Alistair Duke, Grigoris Antoniou and Sandra Stincic Clarke. </span><em>Optimizing a Semantically Enriched Hypercat-enabled Internet of Things Data Hub</em></td><td><b>0</b>,<b>0</b></td><td>0.0</td><td><b style="color:navy">ACCEPT SHORT</b></td></tr>
+                        <tr><td><a name="7" href="#7">7</a></td><td><span>Marjan Alirezaie, Karl Hammar, Eva Blomqvist, Mikael Nystrom and Valentina Ivanova. </span><em>SmartEnv Ontology in E-care@home</em></td><td><b>1</b>,<b>-1</b></td><td>0.0</td><td><b style="color:green">COND ACCEPT SHORT</b></td></tr>
+                        <tr><td><a name="5" href="#5">5</a></td><td><span>Sergio José Rodríguez Méndez and John K. Zao. </span><em>BCI Ontology: A Sensing and Acting Context-based Model for Brain-Computer Interaction</em></td><td><b>1</b>,<b>0</b>,<b>-2</b></td><td>-0.3</td><td><b style="color:green">COND ACCEPT LONG</b></td></tr>
+                        <tr><td><a name="9" href="#9">9</a></td><td><span>Elio Mansour, Richard Chbeir and Philippe Arnould. </span><em>Mob-SSN: An Ontology for Sensor Mobility in Semantic Sensor Networks</em></td><td><b>-1</b>,<b>0</b></td><td>-0.5</td><td><b style="color:red">REJECT LONG</b></td></tr>
+                        <tr><td><a name="6" href="#6">6</a></td><td><span>Lewis McGibbney, Vardis Tsontos, Chi Hin Lam, Nga Chung, Charles Thompson, Flynn Platt, Joe Roberts and Sean Arms. </span><em>Integrated Metadata Profile and Semantic Interpretation Services for Enhanced Interoperability of Oceanographic in situ Sensor Data</em></td><td><b>-1</b>,<b>-1</b></td><td>-1.0</td><td><b style="color:red">REJECT LONG</b></td></tr></tbody></table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="1" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h3 class="section-title">Submission 1</h3>
+
+
+<div about='1' typeof='fabio:ResearchPaper'>
+<p><strong property='dcterms:title' xml:lang='en' >Modeling Smart Sensors on top of SOSA/SSN and WoT TD with the Semantic Smart Sensor Network (S3N) modular Ontology</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' lang='' xml:lang='' about='1#author-1'>Samya Sagar</span>, <span typeof='foaf:Person' property='foaf:name' about='1#author-2'>Maxime Lefrançois</span>, <span typeof='foaf:Person' property='foaf:name' about='1#author-3'>Issam Rebai</span>, <span typeof='foaf:Person' property='foaf:name' about='1#author-4'>Khemaja Maha</span>, <span typeof='foaf:Person' property='foaf:name' about='1#author-5'>Serge Garlatti</span>, <span typeof='foaf:Person' property='foaf:name' about='1#author-6'>Jamel Feki</span>, <span typeof='foaf:Person' property='foaf:name' about='1#author-7'>Lionel Médini</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='1#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='https://ssn2018.github.io/submissions/SSN2018_paper_1_submitted.pdf'>submitted version</a></span> -  <span rel='frbr:realization'><a about='1#final' typeof='fabio:DefinitiveVersion' rel='fabio:hasRepresentation' >final version</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract' xml:lang='en'>The joint OGC and W3C standard SOSA/SSN ontology describes sensors, observations, sampling, and actuation. The W3C Thing Description ontology under development in the W3C WoT working group describes things and their interaction patterns. In this paper we are interested in combining these two ontologies for modeling Smart-Sensors. Along with basic sensors, a Smart-Sensor contains a micro-controller that can run different algorithms adapted to the context and a communicating system that exposes the Smart-Sensor on some network. For example, a smart accelerometer can be used to measure cycling cadence, step numbers or a variety of other things. The SOSA/SSN ontology is only able to model partially the adaptation capabilities of Smart-Sensors to different contexts. Thus, we design an SOSA/SSN extension, called the Semantic Smart Sensor Network (S3N) ontology. S3N answers several competency questions such as how to adapt the Smart-Sensor to the current context of use, that is to say selecting the algorithms to provide the right sensors outputs and the micro-controller capabilities.</span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>SSN Ontology</span>; <span property='prism:keyword'>Smart Sensor</span>; <span property='prism:keyword'>Ontology modeling</span>; <span property='prism:keyword'>context adaptation</span></p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:authorsChoiceRegardingOpenPeerReviewInitiative'>Authors accepted to publish both the paper and the reviews</span></p>
+<p><strong>Decision:</strong> <b property='pso:holdsStatusInTime' resource='pso:accepted-for-publication' style="color:navy">ACCEPT LONG</b></p>
+
+<div about='1#preprint' rel='cito:isReviewedBy'>
+
+<div about='1#review-1' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_1_submitted.pdf'></span><strong rel='dcterms:creator'>Review 1 (<em>name hidden</em>)</strong>: <b>0</b>: (borderline)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Do not publish my review nor my name</span></p>
+<em>review hidden</em>
+<br rel='cito:reviews' resource='1#preprint' />
+</div>
+
+<div about='1#review-2' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_1_submitted.pdf'></span><strong rel='dcterms:creator'>Review 2 (<em>name hidden</em>)</strong>: <b>3</b>: (strong accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Do not publish my review nor my name</span></p>
+<em>review hidden</em>
+<br rel='cito:reviews' resource='1#preprint' />
+</div>
+
+<div about='1#review-3' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_1_submitted.pdf'></span><strong rel='dcterms:creator'>Review 3 (<em>name hidden</em>)</strong>: <b>3</b>: (strong accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='1#review-3-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<div class="review" property='c4o:hasContent' datatype='rdf:HTML' >
+This paper describes the development of the Semantic Smart Sensor Network modular ontologies. The ontology was developed using a standard methodology and all stages are well described.  This includes: defining the difference between basic sensors (for which the SOSA definition of sensors is used) and smart sensors (things is one or more embedded sensors, micro-controllers that can apply algorithms to the sensor data, communication components allowing it to send data/receive instructions, and, crucially, be reprogrammed/reconfigured for different contexts of use).  Three scenarios are described for use of a smart sensors that include a LIS2DH 3 axis accelerometer (monitoring performance during cycling and running; assessing a biathlon athlete’s skiing technique and stability during shooting sessions; and monitoring a person’s quality of sleep and fall detection) from which 13 competency questions are derived based on operational and reconfiguration phases of use.  Existing ontology (SOSA/SSN, M3 and M3-lite, Thing Description, SARIF, and SEAS) are described and evaluated for reuse.<br><br>The Semantic Smart Sensor Network ontology itself is well designed as a set of three modules (core, procedure, and W3C Thing Description alignment) and should capture the details required to satisfy the competency questions.  The classes and properties of the ontology itself are described in the text, with examples for the Core and Procedure modules; alignments for the Thing module are not described, other than s3n:SmartSensor as a subclass of td:Thing.  The ontologies are available online and well documented; it may be worth including a listing at the start of section 4 of all of the S3N classes, properties, and alignments to provide readers with a single point overview of the ontology.<br><br>The proposed definition of a smart sensor differs from that of the IEEE 1451 standard through the requirement that the device “must be reprogrammable and reconfigurable.” Given the importance of this, I would suggest making this point (4) of the definition, rather than added at the end as present.<br><br>The paper does not include details of any evaluation activities of the ontology, other than the examples and text commentary.  Have any ontology validator tools been used, or has the ontology been applied to any use cases that are documented online, or received community feedback during the design process? <br><br>Although the paper does not provide evidence of use of the ontology, given that it models the type of devices often found in IoT deployments, it will be of interest to the community and will no doubt be used in future applications. <br><br>There are a couple of minor typos<br>Section 2.1 – “- a data stream -.” Should be “ (a data stream).”<br>Section 2.1 - “device sensible to some” should be “device sensitive to some”<br>Scenario A – references to the loading new algorithms from the web into the device’s ROM, this should be “persistent storage”<br>The S3N Core Module is specified as having URL http://w3id.org/s3n/CoreOntology; however, this results in a HTTP 404 – it appears this should be changed to https://w3id.org/s3n/S3NCore.<br>Section 4.3 URL for Thing module should be http://w3id.org/s3n/S3NThing
+</div>
+</div>
+</div>
+<br rel='cito:reviews' resource='1#preprint' />
+</div>
+
+</div>
+</div>
+
+</div>
+      </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="2" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h3 class="section-title">Submission 2</h3>
+
+
+<div about='2' typeof='fabio:ResearchPaper'>
+<p><strong property='dcterms:title' xml:lang='en' >A Framework for Semantic Discovery on the Web of Things</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' lang='' xml:lang='' about='2#author-1'>Victor Charpenay</span>, <span typeof='foaf:Person' property='foaf:name' lang='' xml:lang='' about='2#author-2'>Sebastian Käbisch</span>, <span typeof='foaf:Person' property='foaf:name' about='2#author-3'>Harald Kosch</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='2#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='SSN2018_paper_2_submitted.pdf'>submitted version</a></span> -  <span rel='frbr:realization'><a about='2#final' typeof='fabio:DefinitiveVersion' rel='fabio:hasRepresentation' >final version</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract' xml:lang='en'>This paper addresses the problem of discovering WoT agents (servients) that can
+interact in a mediated or peer-to-peer fashion in a larger system. We develop a
+framework that relies on the W3C Thing Description (TD) and Semantic Sensor
+Network (SSN) ontologies, which provide semantics for the physical world
+entities WoT servients are associated with.<br/>
+We formulate the problem of WoT discovery as an abductive reasoning problem
+over knowledge bases expressed in terms of TD and SSN concepts, where new
+semantic relationships between existing systems lead to the creation of other,
+larger systems. We then address the specific case of EL++
+knowledge bases, a fragment of Description Logic. We leverage the mathematical
+framework of Abductive Logic Programming to provide a concrete algorithm for
+abduction that terminates in polynomial time.<br/>
+We illustrate the feasability of our approach on an experimental industrial
+workstation, equipped with micro-controllers capable of storing and exchanging
+RDF data in binary format (uRDF store with EXI4JSON serialization).</span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>Web of Things</span>; <span property='prism:keyword'>Thing Description</span>; <span property='prism:keyword'>Thing Directory</span>; <span property='prism:keyword'>Description Logic</span>; <span property='prism:keyword'>EL++</span>; <span property='prism:keyword'>Abduction</span>; <span property='prism:keyword'>Logic Programming</span>; <span property='prism:keyword'>Semantic Discovery</span></p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:authorsChoiceRegardingOpenPeerReviewInitiative'>Authors accepted to publish both the paper and the reviews</span></p>
+<p><strong>Decision:</strong> <b property='pso:holdsStatusInTime' resource='pso:accepted-for-publication' style="color:navy">ACCEPT LONG</b></p>
+
+<div about='2#preprint' rel='cito:isReviewedBy'>
+
+<div about='2#review-1' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_2_submitted.pdf'></span><strong rel='dcterms:creator'>Review 1 (<em>name hidden</em>)<span typeof='foaf:Person' about='2#reviewer-1'/></strong>: <b>2</b>: (accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='2#review-1-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<div class="review" property='c4o:hasContent' datatype='rdf:HTML' >
+ In this paper, the authors address the problem of discovering WoT agents that can interact in a mediated or peer-to-peer fashion. They build a framework that relies on the W3C TD and SSN ontologies.<br><br>I find this paper is well written and easy to follow. Some general suggestions to improve the paper. The authors may consider to revise the paper accordingly.<br><br>- Related work may be presented in a table for better readability<br>- The authors may consider to draw an architecture of framework, describing the overall architecture and vision<br>- The authors may define the scope of  this work.<br>- What is the limitation of this approach? Where this approach will be working well?<br>- A concrete  industrial use case (describing where the proposed approached can be leveraged ) may make the paper more interesting. The authors describes the use case in Section 5.1, but more detailed description of the use case will be make the work more clear.
+</div>
+</div>
+</div>
+<br rel='cito:reviews' resource='2#preprint' />
+</div>
+
+<div about='2#review-2' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_2_submitted.pdf'></span><strong rel='dcterms:creator'>Review 2 (<em>name hidden</em>) <span typeof='foaf:Person' about='2#reviewer-2'/></strong>: <b>1</b>: (weak accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Do not publish my review nor my name</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='2#review-2-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<em>review hidden</em>
+</div>
+</div>
+<br rel='cito:reviews' resource='2#preprint' />
+</div>
+
+<div about='2#review-3' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_2_submitted.pdf'></span><strong rel='dcterms:creator'>Review 3 (<em>name hidden</em>) <span typeof='foaf:Person' about='2#reviewer-3' property='foaf:name'/></strong>: <b>1</b>: (weak accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='2#review-3-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<div class="review" property='c4o:hasContent' datatype='rdf:HTML' >
+This paper describes an approach abased on abductive reasoning to discover WoT resources. The authors have provided a good review of the relevant state-of-the-art, have provide some examples and an evaluation of their work. <br><br>The work is very relevant to the workshop and will initiate good discussions during the workshop; however, I am not convinced whether abdutive logic/reasoning is a good approach for this problem and the scalability issues of the proposed systems and/or any comparison with existing work are not discussed.
+</div>
+</div>
+</div>
+<br rel='cito:reviews' resource='2#preprint' />
+</div>
+
+</div>
+</div>
+
+</div>
+      </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="3" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h3 class="section-title">Submission 3</h3>
+
+
+<div about='3' typeof='fabio:ResearchPaper'>
+<p><strong property='dcterms:title' xml:lang='en' >Optimizing a Semantically Enriched Hypercat-enabled Internet of Things Data Hub</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' lang='' xml:lang='' about='3#author-1'>Ilias Tachmazidis</span>, <span typeof='foaf:Person' property='foaf:name' about='3#author-2'>Sotiris     Batsakis</span>, <span typeof='foaf:Person' property='foaf:name' about='3#author-3'>John Davies</span>, <span typeof='foaf:Person' property='foaf:name' about='3#author-4'>Alistair Duke</span>, <span typeof='foaf:Person' property='foaf:name' about='3#author-5'>Grigoris Antoniou</span>, <span typeof='foaf:Person' property='foaf:name' about='3#author-6'>Sandra Stincic Clarke</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='3#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='SSN2018_paper_3_submitted.pdf'>submitted version</a></span> -  <span rel='frbr:realization'><a about='3#final' typeof='fabio:DefinitiveVersion' rel='fabio:hasRepresentation' >final version</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract' xml:lang='en'>Large volumes of data is generated from the increasing number of sensor networks and smart devices. Such data is generated and published in multiple formats, thus highlighting the significance of interoperability for the success of what has come to be known as the Internet of Things (IoT). The BT Hypercat Data Hub provides a focal point for the sharing and consumption of available datasets from a wide range of sources. In this work, we present a series of optimizations applied on the  BT Hypercat Data Hub that enabled scalable SPARQL query answering over relational databases and an access control mechanism that filters SPARQL results based on user's subscriptions.</span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>Internet of Things</span>; <span property='prism:keyword'>Semantic Enrichment</span>; <span property='prism:keyword'>Access Control</span>; <span property='prism:keyword'>Hypercat</span>; <span property='prism:keyword'>Data Hub</span></p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:authorsChoiceRegardingOpenPeerReviewInitiative'>Authors accepted to publish the submitted version but not the reviews</span></p>
+<p><strong>Decision:</strong> <b property='pso:holdsStatusInTime' resource='pso:accepted-for-publication' style="color:navy">ACCEPT SHORT</b></p>
+
+<div about='3#preprint' rel='cito:isReviewedBy'>
+
+<div about='3#review-1' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_3_submitted.pdf'></span><strong rel='dcterms:creator'>Review 1 (<em>name hidden</em>)</strong>: <b>0</b>: (borderline)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='3#review-1-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<em>review hidden</em>
+</div>
+</div>
+<br rel='cito:reviews' resource='3#preprint' />
+</div>
+
+<div about='3#review-2' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_3_submitted.pdf'></span><strong rel='dcterms:creator'>Review 2 (<em>name hidden</em>)<span typeof='foaf:Person' about='3#reviewer-2'/></strong>: <b>0</b>: (borderline)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='3#review-2-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<em>review hidden</em>
+</div>
+</div>
+</div>
+<br rel='cito:reviews' resource='3#preprint' />
+</div>
+
+</div>
+</div>
+
+</div>
+      </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="4" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h3 class="section-title">Submission 4</h3>
+
+
+<div about='4' typeof='fabio:ResearchPaper'>
+<p><strong property='dcterms:title' xml:lang='en' >VSSo: the Vehicle Signal and Attribute Ontology</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' lang='' xml:lang='' about='4#author-1'>Benjamin Klotz</span>, <span typeof='foaf:Person' property='foaf:name' about='4#author-2'>Raphaël Troncy</span>, <span typeof='foaf:Person' property='foaf:name' about='4#author-3'>Daniel Wilms</span>, <span typeof='foaf:Person' property='foaf:name' about='4#author-4'>Christian Bonnet</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='4#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='SSN2018_paper_4_submitted.pdf'>submitted version</a></span> -  <span rel='frbr:realization'><a about='4#final' typeof='fabio:DefinitiveVersion' rel='fabio:hasRepresentation' >final version</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract' xml:lang='en'>Application developers in the automotive domain have to deal with thousands of different signals, represented in highly heterogeneous formats, and coming from various car architectures. This situation prevents the development and connectivity of modern applications. We hypothesize that a formal model of car signals, in which the definition of signals are uncorrelated with the physical implementations producing them, would improve interoperability. In this paper, we propose VSSo, a car signal ontology that derives from the automotive standard VSS, and that follows the SSN/SOSA pattern for representing observations and actuations. This ontology is comprehensive while being extensible for OEMs, so that they can use additional private signals in an interoperable way. We developed a simulator for interacting with data modeled under the VSSo ontology pattern available at http://automotive.eurecom.fr/simulator/query</span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>semantic</span>; <span property='prism:keyword'>ontology</span>; <span property='prism:keyword'>Ontology modeling</span>; <span property='prism:keyword'>automotive</span>; <span property='prism:keyword'>signal</span>; <span property='prism:keyword'>sensor</span>; <span property='prism:keyword'>VSS</span>; <span property='prism:keyword'>SSN</span>; <span property='prism:keyword'>SOSA</span>; <span property='prism:keyword'>SPARQL</span></p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:authorsChoiceRegardingOpenPeerReviewInitiative'>Authors accepted to publish both the paper and the reviews</span></p>
+<p><strong>Decision:</strong> <b property='pso:holdsStatusInTime' resource='pso:accepted-for-publication' style="color:navy">ACCEPT AS SHORT</b></p>
+
+<div about='4#preprint' rel='cito:isReviewedBy'>
+
+<div about='4#review-1' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_4_submitted.pdf'></span><strong rel='dcterms:creator'>Review 1 (<em>name hidden</em>) <span typeof='foaf:Person' about='4#reviewer-1' property='foaf:name'/></strong>: <b>1</b>: (weak accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='4#review-1-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<div class="review" property='c4o:hasContent' datatype='rdf:HTML' >
+The paper presents  a car signal ontology, VSSo, that tries to bridge the gaps between existing information models of vehicles with signals, attributes and states using  SSN/SOSA pattern for representing observations and actuations. In general, the ontology is quite interesting in terms of its its usage and application domains. However, the storyline is a bit disconnected. I also have some concerns on technical details in below. <br><br>I looked into the ontology in GitHub, the ontology uses various OWL2 fragments and axioms to specify ontology, I wonder whether the authors consider the computational complexity consequence for each of types of expressions/axioms used. What kind of reasoning implies in the axioms given in the ontology, especially, in Section 3.4, authors mention to the evaluation using SPARQL query, but which entailment regime it assumes?<br><br>The paper mentions iot.schema.org and auto.schema.org, but, when I checked them, they are just the placeholders for future development, even auto.shema.org has few classes and properties but I don’t think it is counted as an ontology. <br><br>There are some concepts and syntaxes are given without proper introductions such qudt:…. and cdt:volume. I found that the way authors introduce “Homonymy” and “Synonymy” in Section 3.3 is quite confusing  in terms of structure  and concept.
+</div>
+</div>
+</div>
+<br rel='cito:reviews' resource='4#preprint' />
+</div>
+
+<div about='4#review-2' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_4_submitted.pdf'></span><strong rel='dcterms:creator'>Review 2 (by <span typeof='foaf:Person' about='4#reviewer-2' property='foaf:name'>Antoine Zimmermann</span>)</strong>: <b>0</b>: (borderline)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review and my name</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='4#review-2-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<div class="review" property='c4o:hasContent' datatype='rdf:HTML'>
+ The paper presents an ontology for vehicle signals and vehicle attributes, called VSSo. Signals are essentially real time data, obtained from sensors, while attributes are static characteristics of the car or its components.<br><br>The ontology is designed using recommended patterns that specialise the SSN classes and properties, and the terminology follows the Vehicle Signal Specication of the W3C automotive working group. While the design seems to make sense, as it is in line with the patterns of the SSN ontology, the paper is quite verbose. Most of its content reproduces what is defined in SSN with a specialisation on vehicle signals. The example code in Turtle is almost the same as the examples in the SSN specification. In my opinion, the paper could have been a short, 8-page paper.<br><br>Moreover, the evaluation is a bit simplistic. The competency questions at the beginning are very easily addressed by having a single property to capture the information. Of course, the ontology has these properties, so the questions can be answered. The first query reveals that an attribute has to be understood as a subproperty of vss:attribute. This is never explained in the design of the ontology. The use of NOW() to find the current state of the car is problematic, since it would require that the ssn:Observation happens exactly at he moment of querying. It is more likely that there is a delay, or that the sensing only happens at regular interval, or even that the sensor data is pushed to the system only when there is a change (e.g., change of gear).<br><br>To summarise, I think the contribution is pretty straightforward (though possibly valuable) but the presentation could have been much more concise, evaluation more focus on the use cases where having this ontology actually helps, as opposed to having an ad hoc vehicle API that can do most of the things mentioned.<br><br>Minor remarks:<br>Intro:<br> - "such as car" -&gt; such as cars<br> - "based on the some" -&gt; ?<br> - footnote 11 and 12, use http://<br><br>Sec.2.3:<br> - "We hypothesis" -&gt; hypothesize<br><br>Sec.3.2:<br> - "and the mother and children branches" -&gt; the parent and children branches<br> - can't a drivetrain be part of a part of a vehicle?<br><br>Sec.3.3:<br> - It seems strange to me that a signal is a property. A property is specific to the feature of interest it belongs to, while the signal transmits observation results, it is specific to the sensor/actuator. There is a potential for a debate here, but I find it strange.<br> - "In order to be compliant with SOSA, we must define define a sosa:Sensor for all sosa:ObservableProperty ..." -&gt; there is no such constrained in SOSA.<br> - p11 "Left"@en and "Right"@en: the double quotes have to be straight (" rather than ”)<br> - "Left"@en why would a position be a sequence of characters with a language tag? Why would the position "Left"@en be different from "left"@en or "Left"@en-US or "izquierda"@es ?<br><br>Sec.3.4:<br> - vss:CurrentGear is a strange name. The use of "current" is making the naming of this property incoherent with the other names. Why not use "CurrentSpeed" for the speed of the vehicle, "CurrentTemperature", etc.?
+</div>
+</div>
+</div>
+<br rel='cito:reviews' resource='4#preprint' />
+</div>
+
+</div>
+</div>
+
+</div>
+      </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="5" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h3 class="section-title">Submission 5</h3>
+
+
+<div about='5' typeof='fabio:ResearchPaper'>
+<p><strong property='dcterms:title' xml:lang='en' >BCI Ontology: A Sensing and Acting Context-based Model for Brain-Computer Interaction</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' lang='' xml:lang='' about='5#author-1'>Sergio José Rodríguez Méndez</span>, <span typeof='foaf:Person' property='foaf:name' about='5#author-2'>John K. Zao</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='5#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='SSN2018_paper_5_submitted.pdf'>submitted version</a></span> -  <span rel='frbr:realization'><a about='5#final' typeof='fabio:DefinitiveVersion' rel='fabio:hasRepresentation' >final version</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract' xml:lang='en'>Key developments in wearable sensors, wireless networks, and distributed computing will largely enable Brain-Computer Interaction (BCI) as a powerful, natural and intuitive mainstream human-computer interaction in real-world activities. BCI systems annotate the sensed signals in order to classify the analysis of brain states/dynamics in diverse daily-life circumstances. There is no any complete and standardized formal semantic structure to model the BCI metadata annotations, which are essential to capture the descriptive and predictive features of the brain signals. We present the BCI Ontology (BCI-O): the first OWL 2 ontology that formalizes relevant metadata for BCI data capture activities by integrating BCI-domain-specific Sensing and Acting Models along with a novel Context Model for describing any kind of real/virtual environments. At its core, BCI-O defines a human-environment interaction model for any BCI, based on design patterns and primarily aligned to the SOSA/SSN, SAN –IoT-O– and DUL ontologies. Its axiomatizations aid BCI systems to implement an ontological overlay upon vast data recording collections to support semantic query constructions (to perform Adaptive BCI) and reasoning for situation-specific data analytics (to apply inference rules for Transfer Learning in multimodal classification).</span></p>
+<p><strong>Keywords:</strong> 
+<span property='prism:keyword'>Brain-Computer Interaction</span>;
+<span property='prism:keyword'>Ontology</span>;
+<span property='prism:keyword'>Sensing-Acting Model</span>;
+<span property='prism:keyword'>Context-based</span>;
+<span property='prism:keyword'>Context-awareness</span>;
+<span property='prism:keyword'>Internet of Things</span>;
+<span property='prism:keyword'>M2M environments</span>;
+</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:authorsChoiceRegardingOpenPeerReviewInitiative'>Authors accepted to publish both the paper and the reviews</span></p>
+<p><strong>Decision:</strong> <b property='pso:holdsStatusInTime' resource='pso:draft' style="color:green">COND ACCEPT LONG</b></p>
+
+<div about='5#preprint' rel='cito:isReviewedBy'>
+
+<div about='5#review-1' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_5_submitted.pdf'></span><strong rel='dcterms:creator'>Review 1 (<em>name hidden</em>) <span typeof='foaf:Person' about='5#reviewer-1'/></strong>: <b>1</b>: (weak accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Do not publish my review nor my name</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='5#review-1-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<em>review hidden</em>
+</div>
+</div>
+<br rel='cito:reviews' resource='5#preprint' />
+</div>
+
+<div about='5#review-2' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_5_submitted.pdf'></span><strong rel='dcterms:creator'>Review 2 (<em>name hidden</em>) <span typeof='foaf:Person' about='5#reviewer-2' property='foaf:name'/></strong>: <b>0</b>: (borderline)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='5#review-2-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<div class="review" property='c4o:hasContent' datatype='rdf:HTML' >
+ The paper presents an ontology for data exchange in the area of Brain-Computer Interaction called BCI-O. The ontology is well-designed from the perspective of traditional ontology engineering methods: the authors follow design patterns and map terms in their ontology to external ontologies. As such, the paper represents a reasonably well-executed exercise in traditional modeling. <br><br>The two authors carried out the conceptualisation of the domain of Brain-Computer Interaction and wrote down the results; now what? I miss a crisp statement regarding the applicability of the resulting modeling artifacts. Sure, all the traditional ontology modeling benefits could in theory apply (the authors mention "pervasive M2M environments"), but I miss a list of reasons why anybody except the two authors should adopt BCI-O, and for what purposes: creating a repository of BCI data? Fitting BCI devices with automated recording of experiments in BCI-O? Anything else?<br><br>The write-up is ok but not great. I have a hard time distinguishing terms from different ontologies (sometimes ontology terms are written in italics, sometimes in bold, sometimes in typewriter fonts; some ontology terms are written without a prefix, some ontology terms include a prefix). Why not adopt the standard prefix:localname convention for writing URIs throughout the paper? Please, have a look at prefix.cc, use the prefix declarations there, and use consistent formatting throughout the paper.<br><br>Also, the UML class diagrams are suboptimal. The diagrams are too small. Maybe focus on the core classes or on a few core modules. Use a font that is readable in a printed version of the paper.<br><br>In summary, the topic is interesting and the results are a good start, but the presentation of the results in the paper needs more work.<br><br>Minor comments:<br>* Could you provide a justification as to why use Unity as basis for the context model?<br>* Headings should be capitalised consistently.
+</div>
+</div>
+</div>
+<br rel='cito:reviews' resource='5#preprint' />
+</div>
+
+<div about='5#review-3' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_5_submitted.pdf'></span><strong rel='dcterms:creator'>Review 3 (<em>name hidden</em>)</strong>: <b>-2</b>: (reject)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='5#review-3-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<div class="review" property='c4o:hasContent' datatype='rdf:HTML' >
+This paper describes the Brain-Computer Interaction ontology. As sensors figure prominently in the ontology, the topic is very relevant for the conference. Provided is a lengthy description of the ontology, and a little on its testing and use (which should be boosted). However it is missing two critical pieces: a problem statement that identifies why the ontology is required and scopes its design, and a review of related work to differentiate this work from others. As a result, its novelty is not well established. In addition, the ontology description is somewhat formulaic and in the manner of an engineering report, without going deeper into perhaps key or novel features. Thus, while there appears to be significant good work done here, the current presentation requires significant attention for publication.</div>
+</div>
+</div>
+<br rel='cito:reviews' resource='5#preprint' />
+</div>
+
+</div>
+</div>
+
+</div>
+      </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="6" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h3 class="section-title">Submission 6</h3>
+
+
+<div about='6' typeof='fabio:ResearchPaper'>
+<p><strong property='dcterms:title' xml:lang='en' >Integrated Metadata Profile and Semantic Interpretation Services for Enhanced Interoperability of Oceanographic in situ Sensor Data</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' lang='' xml:lang='' about='6#author-1'>Lewis McGibbney</span>, <span typeof='foaf:Person' property='foaf:name' about='6#author-2'>Vardis Tsontos</span>, <span typeof='foaf:Person' property='foaf:name' about='6#author-3'>Chi Hin Lam</span>, <span typeof='foaf:Person' property='foaf:name' about='6#author-4'>Nga Chung</span>, <span typeof='foaf:Person' property='foaf:name' about='6#author-5'>Charles Thompson</span>, <span typeof='foaf:Person' property='foaf:name' about='6#author-6'>Flynn Platt</span>, <span typeof='foaf:Person' property='foaf:name' about='6#author-7'>Joe Roberts</span>, <span typeof='foaf:Person' property='foaf:name' about='6#author-8'>Sean Arms</span></p>
+<p><strong>Full text:</strong> (<em>hidden</em>)</p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract' xml:lang='en'>In this paper we describe our rationale and approach developed under the OIIP project for support of enhanced metadata profiles at the granule (file) level for ocean data. We cover the OIIP system architecture which involves a framework for rich domain metadata support, our meadata profiling service (MPS) and our Semantic Interpretation Service (SIS) subsystem. Our work on electronic tagging datasets as described herewith is available for application in areas spanning gliders, floats and other Lagrangian ocean samplers.</span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>oceanographic in situ sensors</span>; <span property='prism:keyword'>Smart Sensor</span>; <span property='prism:keyword'>metadata profiling</span>; <span property='prism:keyword'>interoperability</span></p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:authorsChoiceRegardingOpenPeerReviewInitiative'>No response from the authors</span></p>
+<p><strong>Decision:</strong> <b property='pso:holdsStatusInTime' resource='pso:rejected-for-publication' style="color:red">REJECT LONG</b></p>
+
+<div about='6#preprint' rel='cito:isReviewedBy'>
+
+<div about='6#review-1' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_6_submitted.pdf'></span><strong rel='dcterms:creator'>Review 1 (<em>name hidden</em>)</strong>: <b>-1</b>: (weak reject)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='6#review-1-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<em>review hidden</em>
+</div>
+</div>
+<br rel='cito:reviews' resource='6#preprint' />
+</div>
+
+<div about='6#review-2' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_6_submitted.pdf'></span><strong rel='dcterms:creator'>Review 2 (<em>name hidden</em>)</strong>: <b>-1</b>: (weak reject)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review and my name</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='6#review-2-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<em>review hidden</em>
+</div>
+</div>
+<br rel='cito:reviews' resource='6#preprint' />
+</div>
+
+
+</div>
+</div>
+
+</div>
+      </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="7" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h3 class="section-title">Submission 7</h3>
+
+
+<div about='7' typeof='fabio:ResearchPaper'>
+<p><strong property='dcterms:title' xml:lang='en' >SmartEnv Ontology in E-care@home</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' lang='' xml:lang='' about='7#author-1'>Marjan Alirezaie</span>, <span typeof='foaf:Person' property='foaf:name' about='7#author-2'>Karl Hammar</span>, <span typeof='foaf:Person' property='foaf:name' about='7#author-3'>Eva Blomqvist</span>, <span typeof='foaf:Person' property='foaf:name' about='7#author-4'>Mikael Nystrom</span>, <span typeof='foaf:Person' property='foaf:name' about='7#author-5'>Valentina Ivanova</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='7#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='SSN2018_paper_7_submitted.pdf'>submitted version</a></span> -  <span rel='frbr:realization'><a about='7#final' typeof='fabio:DefinitiveVersion' rel='fabio:hasRepresentation' >final version</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract' xml:lang='en'>In this position paper we briefly introduce SmartEnv ontology which relies on SSN and is used to represent different aspects of smart and sensorized environments. We will also talk about E-care\@home project aiming at providing an IoT-based health-care system for elderly people at their homes. Furthermore, we refer to the role of SmartEnv in Ecare@home and how it needs to be further extended to achieve semantic interoperability as one of the challenges in development of autonomous health care systems at home.
+</span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>SmartEnv Ontology
+</span>; <span property='prism:keyword'>E-Health</span>; <span property='prism:keyword'>Ontology modeling</span>; <span property='prism:keyword'>Semantic Interoperability</span></p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:authorsChoiceRegardingOpenPeerReviewInitiative'>Authors accepted to publish both the paper and the reviews</span></p>
+<p><strong>Decision:</strong> <b property='pso:holdsStatusInTime' resource='pso:draft' style="color:green">COND ACCEPT SHORT</b></p>
+
+<div about='7#preprint' rel='cito:isReviewedBy'>
+
+<div about='7#review-1' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_7_submitted.pdf'></span><strong rel='dcterms:creator'>Review 1 (<em>name hidden</em>)</strong>: <b>1</b>: (weak accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Do not publish my review nor my name</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='7#review-1-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<em>review hidden</em>
+</div>
+</div>
+<br rel='cito:reviews' resource='7#preprint' />
+</div>
+
+<div about='7#review-2' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_7_submitted.pdf'></span><strong rel='dcterms:creator'>Review 2 (<em>name hidden</em>)</strong>: <b>-1</b>: (weak reject)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='7#review-2-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<div class="review" property='c4o:hasContent' datatype='rdf:HTML' >
+This paper presents a work in progress ontology for representing smart environments in health related scenarios. <br><br>Although there are different new elements present in this ontology, such as Agents or temporal patterns. However, the paper lacks a more logical structure in order to better justify the need for these extensions, and the process followed in order to model the new ontology patterns. Ontology engineering methodologies may help in this task, i.e. defining competency questions, establishing an evaluation plan for the ontology, etc. Although some of the questions are somehow present in Section 2, this is currently rather vague and imprecise.<br><br>It is also worth noting that there are many IoT and AAL related works that consider ontology extensions in this domain. The authors should better justify the need for the new patterns, and explain what are the limitations in a more complete related work. The authors could also use a set of validating use cases in order to better motivate their extensions, and also to perform validation (e.g. completeness, responding to competency questions, etc). <br><br>Although these patterns may spark interesting discussions in the workshop, the paper seems rather incomplete. This is noticeable in sections 3 and 4, which are not really well developed and seem to have been written in a rush. It is not clear what is the message these sections try to convey (especially section 3), or end rather abruptly (section 4).<br><br>In summary, there are certain aspects in the proposed extensions that may be interesting for discussion, but the paper does not provide a sufficiently well developed motivation, state of the art description, evaluation (or evaluation plan), examples or use cases that showcase the use of this ontology. This work may require a significant improvement before publication. In my opinion, the paper could focus only on section 2, and only present the patterns, given that the rest of the paper is too undeveloped.<br><br>It is surprising that the SSN ontology is not properly referenced (i.e. the reference paper). Also surprising that the new version of SSN is not referenced either.
+</div>
+</div>
+<br rel='cito:reviews' resource='7#preprint' />
+</div>
+
+</div>
+</div>
+
+</div>
+      </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="8" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h3 class="section-title">Submission 8</h3>
+
+
+<div about='8' typeof='fabio:ResearchPaper'>
+<p><strong property='dcterms:title' xml:lang='en' >Integrating Building Information Modeling and Sensor Observations using Semantic Web</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' lang='' xml:lang='' about='8#author-1'>Mads Holten Rasmussen</span>, <span typeof='foaf:Person' property='foaf:name' about='8#author-2'>Christian Aaskov Frausing</span>, <span typeof='foaf:Person' property='foaf:name' about='8#author-3'>Christian Anker Hviid</span>, <span typeof='foaf:Person' property='foaf:name' about='8#author-4'>Jan Karlshøj</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='8#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='SSN2018_paper_8_submitted.pdf'>submitted version</a></span> -  <span rel='frbr:realization'><a about='8#final' typeof='fabio:DefinitiveVersion' rel='fabio:hasRepresentation' >final version</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract' xml:lang='en'>The W3C Linked Building Data on the Web community group is studying modeling approaches for the built environment using semantic web technologies. One outcome of this effort is a set of proposed ontologies together providing necessary terminology for the Architecture, Engineering, Construction and Operation (AECO) domains. In this paper, we demonstrate an integration between different datasets described using these ontologies in combination with the standard ontology for representing Sensors, Observations, Sampling, Actuation, and Sensor Networks (SSN/SOSA). In combination, the datasets cover the building's overall topology, 2D plan geometry, sensor and actuator locations and a log of their observations. We further suggest an integrated design approach that enables the designers to explicitly express the semantics of the sensors and actuators from the early stages of the project such that they can be carried on to construction and operation.</span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>IoT</span>;
+<span property='prism:keyword'>BOT</span>;
+<span property='prism:keyword'>BIM</span>;
+<span property='prism:keyword'>Semantic Web</span>;
+<span property='prism:keyword'>Linked Building Data</span>
+</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:authorsChoiceRegardingOpenPeerReviewInitiative'>Authors accepted to publish both the paper and the reviews</span></p>
+<p><strong>Decision:</strong> <b property='pso:holdsStatusInTime' resource='pso:accepted-for-publication' style="color:navy">ACCEPT DEMO</b></p>
+
+<div about='8#preprint' rel='cito:isReviewedBy'>
+
+<div about='8#review-1' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_8_submitted.pdf'></span><strong rel='dcterms:creator'>Review 1 (by <span typeof='foaf:Person' about='8#reviewer-1' property='foaf:name'>Armin Haller</span>)</strong>: <b>1</b>: (weak accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review and my name</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='8#review-1-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<div class="review" property='c4o:hasContent' datatype='rdf:HTML' >
+The paper presents a workflow and framework to integrate an Architect's model, an Engineer's model and the actual Operational model of a building. It proposes to use integrated ontological models to integrate the readings of the sensors/actuators in a building (such as the HVAC system) back with the initial BIM models of the building design/construction. The paper presents a couple of mapping tools that are available online and reuse existing ontologies, i.e. the Building Topology Ontology (BOT), geoSPARQL and SOSA/SSN.<br><br>Overall the paper describes an important integration of information that is usually not fully propagated from a design phase to an operational phase of a building. It would have benefited the paper if an overview of the integrated ontology is provided, i.e. the terms used from the source ontologies. For example, the paper proposes to reuse/introduce a bot:containsElement relation to indicate the deployment of sensors/actuators throughout the building. The sosa:isFeatureOfInterest relation of SOSA/SSN would actually be the wrong relation to use for that purpose. The deployedSystem or hosts relation of a sensor/actuator on their platform (the building or its components, i.e. systems) can be used for that purpose (cf. Fig. 2 in http://www.semantic-web-journal.net/system/files/swj1878.pdf) and could be semantically related to the bot:containsElement relation.<br><br>The paper would also benefit from clearly modelling the workflow that is shown in Figure 1, i.e. present a workflow model that illustrates who is modelling which part of the integrated model and how the data is then generated during operation of the building. <br><br>It is also mentioned that the implementation consisted of a 20M triples graph of which the observations were the primary component and how that already presented some performance issues. Considering that the actual graph that contains many such building observations over longer periods will become significantly larger, an approach how to model the Linked Temperature Data Cube to pre-process the hourly, daily, weekly, monthly and annual maximum temperatures explicitly using a data cube vocabulary in combination with SOSA/SSN and BOT would have been useful.<br><br>There are minor language issues throughout the paper, e.g.<br>way.The - &gt; way. The<br>engage domain -&gt; engages domain<br>is an future - is a future<br><br><br>http://www.semantic-web-journal.net/system/files/swj1878.pdf
+</div>
+</div>
+</div>
+<br rel='cito:reviews' resource='8#preprint' />
+</div>
+
+<div about='8#review-2' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_8_submitted.pdf'></span><strong rel='dcterms:creator'>Review 2 (<em>name hidden</em>)</strong>: <b>1</b>: (weak accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='8#review-2-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<div class="review" property='c4o:hasContent' datatype='rdf:HTML' >
+The paper presents a demonstration on an integration between different datasets described using the ontologies developed for Building Data in combination with the standard ontology for representing Sensors, Observations, Sampling, Actuation, and Sensor Networks (SSN/SOSA). Even the work is still in a early stage but application is very interesting. It is a nice application of SSN/SOSA, I think the demonstration is quite beneficial to the audience of the workshop. <br><br>However, I wonder if the demo is accessible online. The paper gives some interesting figures of the datasets in Section 3, but there is no indication whether the dataset is publicly available. Section 5 reports some performance figures together with the data size, but it does give details on the hardware setup, thus,  such figures do not make much sense.
+</div>
+</div>
+</div>
+<br rel='cito:reviews' resource='8#preprint' />
+</div>
+
+</div>
+</div>
+
+</div>
+      </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="9" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h3 class="section-title">Submission 9</h3>
+
+
+<div about='9' typeof='fabio:ResearchPaper'>
+<p><strong property='dcterms:title' xml:lang='en' >Mob-SSN: An Ontology for Sensor Mobility in Semantic Sensor Networks</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' lang='' xml:lang='' about='9#author-1'>Elio Mansour</span>, <span typeof='foaf:Person' property='foaf:name' about='9#author-2'>Richard Chbeir</span>, <span typeof='foaf:Person' property='foaf:name' about='9#author-3'>Philippe Arnould</span></p>
+<p><strong>Full text:</strong> (<em>hidden</em>)</p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract' xml:lang='en'>Recent advances in sensor technology, have allowed sensor networks to impact various domains (e.g., military, health, environment). These networks generate huge amounts of heterogeneous data, that is hard to represent, share, and integrate. Therefore, semantic web techniques, such as ontologies, have been widely adopted for information representation. <br/>
+However, existing works do not properly address certain challenges: (i) providing a generic and re-usable approach for different application purposes; (ii) representing a variety of platforms (e.g., environments, devices) for sensor deployment, therefore, integrating new components (e.g., mobile phones) and enabling new applications (e.g., crowd-sensing); (iii) representing different sensor types (e.g., mobile sensors), in order to enrich the network with different data and ensure better coverage; and (iv) representing diverse data (scalar/multimedia), since sensors are able to sense both types, and various applications (e.g., event detection) benefit from this diversity. <br/>
+In this paper, we propose Mob-SSN, an ontology that extends the Semantic Sensor Network (SSN) ontology in order to address the aforementioned challenges. We complement SSN with concepts related to platforms, sensors, and data/properties. In addition, we show how Mob-SSN can be re-used in various contexts. We finally propose a set of criteria for the experimentation and validation of our proposal.</span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>Semantic Sensor Networks</span>; <span property='prism:keyword'>Knowledge Representation
+</span>; <span property='prism:keyword'>Ontology modeling</span>; <span property='prism:keyword'>Sensor Mobility</span></p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:authorsChoiceRegardingOpenPeerReviewInitiative'>No response from the authors</span></p>
+<p><strong>Decision:</strong> <b property='pso:holdsStatusInTime' resource='pso:rejected-for-publication' style="color:red">REJECT</b></p>
+
+<div about='9#preprint' rel='cito:isReviewedBy'>
+
+<div about='9#review-1' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_9_submitted.pdf'></span><strong rel='dcterms:creator'>Review 1 (<em>name hidden</em>)</strong>: <b>-1</b>: (weak reject)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Do not publish my review nor my name</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='9#review-1-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<em>review hidden</em>
+</div>
+</div>
+<br rel='cito:reviews' resource='9#preprint' />
+</div>
+
+<div about='9#review-2' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_9_submitted.pdf'></span><strong rel='dcterms:creator'>Review 2 (<em>name hidden</em>)</strong>: <b>0</b>: (borderline)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='9#review-2-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<em>review hidden</em>
+</div>
+</div>
+<br rel='cito:reviews' resource='9#preprint' />
+</div>
+
+</div>
+</div>
+
+</div>
+      </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="10" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h3 class="section-title">Submission 10</h3>
+
+
+<div about='10' typeof='fabio:ResearchPaper'>
+<p><strong property='dcterms:title' xml:lang='en' >Ontological requirement specification for smart irrigation systems: a SOSA/SSN and SAREF comparison</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' lang='' xml:lang='' about='10#author-1'>María Poveda-Villalón</span>, <span typeof='foaf:Person' property='foaf:name' about='10#author-2'>Quang-Duy Nguyen</span>, <span typeof='foaf:Person' property='foaf:name' about='10#author-3'>Catherine Roussey</span>, <span typeof='foaf:Person' property='foaf:name' about='10#author-4'>Christophe de Vaulx</span>, <span typeof='foaf:Person' property='foaf:name' about='10#author-5'>Jean-Pierre Chanet</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='10#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='SSN2018_paper_10_submitted.pdf'>submitted version</a></span> -  <span rel='frbr:realization'><a about='10#final' typeof='fabio:DefinitiveVersion' rel='fabio:hasRepresentation' >final version</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract' xml:lang='en'>Precision agriculture is nowadays getting more and more attention in Europe. Due to the common water shortage problem, precision irrigation could become a key activity to save and use water in a more sustainable way. This paper builds upon an automatic irrigation system implemented as a context-aware system in which context is acquired thanks to a wireless sensor network. In such system, ontologies are used to solve integration problem of heterogeneous data provided by different types of sensors. Moreover, ontologies enable reasoning over these data to enrich the context. The automatic irrigation system will be installed on the pilot site of Irstea called AgroTechnoPole, located in Montoldre. The main goal of this paper is to analyze the SOSA/SSN and SAREF standard ontologies in regards to the ontological requirements that arise from the AgroTechnoPole use case.</span></p>
+<p><strong>Keywords:</strong> <span property='prism:keyword'>Ontologies</span>; <span property='prism:keyword'>Adaptive Context-Aware</span>; <span property='prism:keyword'>Precision Irrigation</span></p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:authorsChoiceRegardingOpenPeerReviewInitiative'>Authors accepted to publish both the paper and the reviews</span></p>
+<p><strong>Decision:</strong> <b property='pso:holdsStatusInTime' resource='pso:accepted-for-publication' style="color:navy">ACCEPT LONG</b></p>
+
+<div about='10#preprint' rel='cito:isReviewedBy'>
+
+<div about='10#review-1' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_10_submitted.pdf'></span><strong rel='dcterms:creator'>Review 1 (by <span typeof='foaf:Person' about='10#reviewer-1' property='foaf:name'>Simon Cox</span>)</strong>: <b>2</b>: (accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review and my name</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='10#review-1-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<div class="review" property='c4o:hasContent' datatype='rdf:HTML' >
+This is a nice paper on a useful topic - i.e. evaluating the applicability of two 'standard' ontologies for a specific application of quite significant interest. The paper reports on what is clearly a work-in-progress as the evaluation only qualitative. I look forward to future reports on an implementation. <br><br>The paper is generally well written, carefully described and clearly argued. I have a few suggestions for improvement, in order of appearance:<br><br>1. In Section 2 in the description of 'low-level' vs 'high-level' context, the example of high-level context (state='dry') is potentially derivable from low-level observations (soil moisture, rainfall) so I don't find it very illuminating. Could you suggest an alternative to illustrate the 'high-level' concept better? <br><br>2. Section 3 gives an overview of the proprietary irrigation management system which is the basis of the experiment. However, the level of detail is much more than is necessary for the evaluation and it reads a bit too much like an IRRINOV white-paper. I suggest reducing the length of this section by about 50% emphasizing only those elements used to define the requirements in section 4. <br><br>3. Requirement R7.1 mentions the fact that the sensor location and feature of interest location may not be the same. The separation of locations, and thus the ability to support in-situ, ex-situ and remotely-sensed observations, was a key feature of the OGC Observations and Measurements standard (v1 from 2007, and v2 was also published as ISO 19156:2011) from which SSN took the relevant parts of its vocabulary (i.e. 'feature-of'interest'). O&amp;M should be mentioned in the context (and cited in the references). <br><br>4. Para 3 in Section 5 mentions that SSN 'has been broadly adopted worldwide'. Indeed, SSN has been broadly cited in the research literature and is the basis for many research projects. Alongside this the O&amp;M standard (and its derivative ODM2) have been broadly adopted in operational systems particularly in earth and environment monitoring (e.g. INSPIRE) and provide even more justification for understanding SSN as a core cross-domain vocabulary. <br><br>5. A number of the citations in the list of References are incomplete<br>- numbers 1, 10, 19, 21 do not include enough information to locate the reports<br>- the actual W3C Recommendation for SSN (2017) is not cited, even though this is the basis for much of the analysis https://www.w3.org/TR/vocab-ssn/ <br>- as mentioned above, add reference to O&amp;M http://www.opengeospatial.org/standards/om and https://www.iso.org/standard/32574.html
+</div>
+</div>
+</div>
+<br rel='cito:reviews' resource='10#preprint' />
+</div>
+
+<div about='10#review-2' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_10_submitted.pdf'></span><strong rel='dcterms:creator'>Review 2 (<em>name hidden</em>)</strong>: <b>2</b>: (accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Do not publish my review nor my name</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='10#review-2-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<em>review hidden</em>
+</div>
+</div>
+<br rel='cito:reviews' resource='10#preprint' />
+</div>
+
+<div about='10#review-3' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_10_submitted.pdf'></span><strong rel='dcterms:creator'>Review 3 (<em>name hidden</em>)</strong>: <b>1</b>: (weak accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Do not publish my review nor my name</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='10#review-3-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<em>review hidden</em>
+</div>
+</div>
+<br rel='cito:reviews' resource='10#preprint' />
+</div>
+
+</div>
+</div>
+
+</div>
+      </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+    <section id="11" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <h3 class="section-title">Submission 11</h3>
+
+
+<div about='11' typeof='fabio:ResearchPaper'>
+<p><strong property='dcterms:title' xml:lang='en' >Towards Adaptive Anomaly Detection and Root Cause Analysis by Automated Extraction of Knowledge from Risk Analyses</strong></p>
+<p rel='dcterms:creator'><strong>Author(s):</strong> <span typeof='foaf:Person' property='foaf:name' about='11#author-1'>Bram  Steenwinckel</span>,
+<span typeof='foaf:Person' property='foaf:name' about='11#author-2'>Pieter  Heyvaert</span>, <span typeof='foaf:Person' property='foaf:name' about='11#author-3'>Dieter  De Paepe  </span>, <span typeof='foaf:Person' property='foaf:name' about='11#author-4'>Olivier Janssens</span>, <span typeof='foaf:Person' property='foaf:name' about='11#author-5'>Sander Vanden Hautte</span>, <span typeof='foaf:Person' property='foaf:name' about='11#author-6'>Anastasia Dimou</span>, <span typeof='foaf:Person' property='foaf:name' about='11#author-7'>Filip De Turck</span>, <span typeof='foaf:Person' property='foaf:name' about='11#author-8'>Sofie Van Hoecke</span>, <span typeof='foaf:Person' property='foaf:name' about='11#author-9'>Femke Ongenae</span></p>
+<p><strong>Full text:</strong> <span rel='frbr:realization'><a about='11#preprint' typeof='fabio:Preprint' rel='fabio:hasRepresentation' href='SSN2018_paper_11_submitted.pdf'>submitted version</a></span> -  <span rel='frbr:realization'><a about='11#final' typeof='fabio:DefinitiveVersion' rel='fabio:hasRepresentation' >final version</a></span></p>
+<p><strong>Abstract:</strong> <span property='dcterms:abstract' xml:lang='en'>Connected sensors inside the device can analyse the environment 
+and report possible unwanted behaviour. Current risk analysis 
+tools, such as Fault Tree Analysis (FTA) and Failure Mode and Effect 
+Analysis (FMEA), provide prior information on these malfunctions. A 
+lot of people are involved during this process, resulting in disambiguates 
+and incompleteness. Ontologies could resolve this issue by providing an 
+uniform structure for the failures and their causes. However, domain experts 
+are not always ontology experts, resulting in a lot of human effort 
+to keep the ontologies up to date. In this paper, a tool is developed to 
+automate the mapping of the data from the FMEA to a domain-specific 
+ontology and generate rules from a constructed FTA. The approach is 
+demonstrated with a use case to investigate the possible failures and 
+causes of reduced passenger comfort levels inside a train.</span></p>
+<p><strong>Keywords:</strong>
+<span property='prism:keyword'>Anomaly detection</span>;
+<span property='prism:keyword'>Root Cause Analysis</span>;
+<span property='prism:keyword'>Risk Analysis</span>;
+<span property='prism:keyword'>Semantics</span>;
+<span property='prism:keyword'>Ontology development</span>;
+<span property='prism:keyword'>Sensor data</span>;
+<span property='prism:keyword'>IoT</span>
+</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:authorsChoiceRegardingOpenPeerReviewInitiative'>Authors accepted to publish both the paper and the reviews</span></p>
+<p><strong>Decision:</strong> <b property='pso:holdsStatusInTime' resource='pso:accepted-for-publication' style="color:navy">ACCEPT LONG</b></p>
+
+<div about='11#preprint' rel='cito:isReviewedBy'>
+
+<div about='11#review-1' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_11_submitted.pdf'></span><strong rel='dcterms:creator'>Review 1 (<em>name hidden</em>)</strong>: <b>1</b>: (weak accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='11#review-1-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<div class="review" property='c4o:hasContent' datatype='rdf:HTML' >
+The paper describes an extraction approach for risk analysis models and how to convert their content to RDF graphs and SWRL rules. Two failure management methods are used as input sources and mapped to an extension of the SSN ontology in order to create an unambiguous and consistent dataset. The outlined approach seems to be work in progress and therefore lacks a sufficient evaluation but contains a use case description as a proof of work.<br>The text is well written and easy to follow and the mentioned resources are online accessible. The regarded topic fits into the workshop’s scope as it deals with a highly relevant dimension of processing of sensor information which – to the best of my knowledge – has not yet been sufficiently investigated for failure management. Discussing how the usage of semantic technologies, and the SSN Ontology in particular can be facilitated, and how machine processing steps can improve the data analysis is worth being presented.<br>The paper falls short when explaining the impact of having the failure models and the sensor data in a machine processable format. Which resources could be connected with the extracted data to improve reasoning, or how could sharing it create advantages? The mapping/rule extraction definitely adds complexity to the process, and clarifying its benefits will help to justify it.<br>An open point for further discussions at the workshop is how the proposed approach actually reduces the need for ontology experts (which is a major claim of the paper). As any change of the input syntax requires according adjustments in either the mapping or the Python script, a domain expert is usually not able to achieve it without extensive support. <br>There might also be an error in the modeling of the use case. The ‘ValueTooHigh’ failure is also connected with the condition ‘Temp &lt;= -40’ (Fig. 7). This seems quite counterintuitive. In addition, it might be helpful if also a correct alarm measurement would be mentioned. The reader may assume that a temperature value above 125° might not necessarily indicate a sensor failure but more probably a burning train.
+</div>
+</div>
+</div>
+<br rel='cito:reviews' resource='11#preprint' />
+</div>
+
+<div about='11#review-2' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_11_submitted.pdf'></span><strong rel='dcterms:creator'>Review 2 (<em>name hidden</em>)</strong>: <b>2</b>: (accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Do not publish my review nor my name</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='11#review-2-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<em>review hidden</em>
+</div>
+</div>
+<br rel='cito:reviews' resource='11#preprint' />
+</div>
+
+<div about='11#review-3' typeof='fabio:Review oa:Annotation' style='margin-top: 20px;'>
+<p><span rel='oa:motivatedBy' resource='oa:assessing'></span><span rel='dcterms:rights' resource='https://creativecommons.org/licenses/by/4.0/'></span><span rel='oa:hasTarget' resource='https://ssn2018.github.io/submissions/SSN2018_paper_11_submitted.pdf'></span><strong rel='dcterms:creator'>Review 3 (<em>name hidden</em>)</strong>: <b>1</b>: (weak accept)</p>
+<p><strong>Open peer review initiative:</strong> <span property='opri:reviewersChoiceRegardingOpenPeerReviewInitiative'>Publish my review</span></p>
+<div rel='frbr:realization oa:hasBody'>
+<div about='11#review-3-description' typeof='fabio:Comment oa:TextualBody'><span property='dcterms:format' content='text/html' lang='' xml:lang=''></span><span property='dcterms:language' content='en' lang='' xml:lang=''></span>
+<div class="review" property='c4o:hasContent' datatype='rdf:HTML' >
+This paper presents a comprehensive approach to identify, from specific formats used by experts in anomaly detection, the ontology classes and mapping rules to detect anomalies in sensor observations. The subject is interesting and the work consistent. It has been implemented in a real application. The paper is quite well-written, but could be presented more clearly.<br><br>General remarks:<br>----------------<br>- The reader has to wait until the last sections to get a clear view of what is the global purpose of this work (i.e. semantically annotating and reasoning about sensor observations)<br>- The Folio ontology could be largely improved, which I think could be a condition for the paper to be accepted<br>- While the focus of the paper is semantizing sensor data, there are currently very few relations between its contents (i.e. the ontology) and SSN, the topic of the workshop. I leave it up to the workshop organizers to discuss whether the paper is in the scope of the workshop.<br><br>Detailed remarks:<br>-----------------<br>The 3 first sentences of the abstract need to be proofread, and in particular, the word “disambiguates” is not a noun. Also, the sentence starting with “In this paper, a tool is developed to automate” does not sound very researchy.<br><br>I found the introduction a bit long, especially for its contextualization phase. I think the authors could gain space when explaining that domain experts are not ontology experts and spend more space introducing the contribution. In addition, at this step, I think the introduction should be presented more basically (not giving too many details about what happens when “the documents” – which ones? – change) and presenting it step by step. In particular, given the place that takes the Folio ontology in the contribution section, I think it could be announced as such.<br>More generally, I am not sure I understood the typical application in which domain ontologies and inference rules are used. My guess is that they are embedded in RCA and its problem solver (BTW, please replace “the problem solver” with “a problem solver”), but what for and how are they used?<br><br>The state of the art sounds right to me, even if it is not well-balanced between ontology and rule generation. For instance, more details could be given about the technical format of FMEA / FTA documents (which are given in figure 2) to help the reader figure out what other rule generation tools are classically used with such formats.<br><br>In the contribution section, the introduction clearly states the final aim of the approach, but misses its point to give an overview of the approach and how subsections are organized. Even though I’m sure RMLEditor is a great tool, I don’t think it should be mentioned in Fig. 2 as part of the failure detection process. Instead, please provide the “big picture” explaining not only how different elements are generated, but also how they are intended to be used.<br><br>In section 3.1, I think the authors should insist on the fact that *they* designed the Folio ontology (instead of “an ontology was constructed”). IMHO, it is part of the approach. Regarding this ontology, I have several remarks:<br>- Although class definitions seem to have been well-studied, object properties definitions are very poor and there are no data properties (though some class definitions like Faulty look like DP). Several prefixes are declared but not used.<br>- I’m surprised that the ontology does not comprise the notion of fault / failure / anomaly itself. I think it would make more sense to link it accurately with other important classes than adding subClassOf relations between almost everything and the vague notion of AnomalyKnowledge.<br>- Fig. 3 does not correspond to the actual version of the ontology available on GitHub (commit #4a489a9). To name a few: folio:Faulty is not declared as a subclass of sosa:Observation (and actually, is does not look like one) as mentioned in the figure; folio:ObservationValue, defined as a subclass of sosa:Result does not appear in the figure (what is its difference with sosa:Result?); folio:ObservableProperty does not exist in the ontology (what would be the purpose of inserting this class alone between 2 SOSA entities anyway?).<br>- So in the ontology version available online, it looks like the only link between Folio and SSN would be the tight relation happenedAt between folio:FailureMode and ssn:System, whereas I feel there is something to say between sosa:Observation &amp; folio:Effect or its subclasses for instance.<br>- There are some inaccurate relations among the SSN / SOSA classes themselves (“Observes” instead of madeObservation, inaccurate range for hasSubsystem, etc.).<br><br>In 3.1, I don’t see the point made by fig. 4: it seems the authors wanted to precise some points already mentioned in fig. 3, but at the end added contradictions (Is FailureCause a subclass of Effect? What do the parentheses around “Effect” mean in the first box? As there is no legend, what do the vertical arrows on the boxes mean?). I think it would be better redesigning fig. 3 and getting rid of 4. BTW, please increase text size on fig. 3.<br>I think the § describing SOSA and SSN would better fit in the state of the art than in the contribution.<br><br>In section 3.2, it would help understanding is the authors provided – as code – an example of rule &amp; produced RDF triple from the running example. Please replace the term “concept” with “class”, and assess there is no situation where a rule should create an individual rather than a class.<br><br>In section 3.3, should not the result be in the comparison operator? -&gt; swrlb:greaterThan(?result, 50) Otherwise, I think the set of variables should be extensively described.<br><br>Section 3.4 provides the big picture, and in my opinion, comes too late. If I understand well, the idea is to automatically build the classification &amp; rules upon experts’ FTA / FMEA material, so that the data are dynamically annotated according to these classes and their values tested against the rules to detect anomalies. Why not saying that for instance, in the introduction of section 3?<br><br>The use case presented in section 4 does not really evaluate the system, but shows that it has been implemented in an actual, non-critical use case. Again, I would have liked to see an example of the produced ontology. In fig. 6, please remove the columns named I, O and RPN, or explain what they stand for. In fig. 7, what is the point of comparing the temperature value with 50? Fig. 8 has no legend; please provide one.<br><br>The conclusion of the paper is quite short and still explains that the paper proposes a tool. It could (re)state more details about the whole approach and each of its steps.</div>
+</div>
+</div>
+<br rel='cito:reviews' resource='11#preprint' />
+</div>
+
+</div>
+</div>
+
+
+</div>
+      </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section>
+
+
+    <!-- script -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

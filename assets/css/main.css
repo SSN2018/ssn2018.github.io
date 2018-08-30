@@ -588,3 +588,25 @@ figure figcaption {
     border: 1px dotted blue;
     text-align: center;
 }
+
+
+table, tr { 
+  border-collapse: collapse; 
+  margin-bottom: 1em; 
+  border-bottom: 1px solid black;
+}
+
+div.review {
+      display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    overflow: auto;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+      font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+
+}
