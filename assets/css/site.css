@@ -136,3 +136,12 @@ figure figcaption {
     background: url(../images/backgrounds/header-4224.jpg) no-repeat center center/cover;
   }
 }
+
+.program tr:nth-child(odd) {
+  background: #EDB;
+}
+
+.program {
+  border-collapse: separate;
+  border-spacing: 0px 1ex;
+}
