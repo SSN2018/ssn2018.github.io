@@ -308,7 +308,8 @@ In this paper, we propose Mob-SSN, an ontology that extends the Semantic Sensor 
 <https://ssn2018.github.io/submissions/10#author-5> a foaf:Person ;
     foaf:name "Jean-Pierre Chanet"@en .
 
-<https://ssn2018.github.io/submissions/10#final> a fabio:DefinitiveVersion .
+<https://ssn2018.github.io/submissions/10#final> a fabio:DefinitiveVersion ;
+    fabio:hasRepresentation <http://ceur-ws.org/Vol-2213/paper1.pdf> .
 
 <https://ssn2018.github.io/submissions/10#review-1> a fabio:Review,
         oa:Annotation ;
@@ -371,7 +372,8 @@ In this paper, we propose Mob-SSN, an ontology that extends the Semantic Sensor 
 <https://ssn2018.github.io/submissions/11#author-9> a foaf:Person ;
     foaf:name "Femke Ongenae"@en .
 
-<https://ssn2018.github.io/submissions/11#final> a fabio:DefinitiveVersion .
+<https://ssn2018.github.io/submissions/11#final> a fabio:DefinitiveVersion ;
+    fabio:hasRepresentation <http://ceur-ws.org/Vol-2213/paper2.pdf> .
 
 <https://ssn2018.github.io/submissions/11#review-1> a fabio:Review,
         oa:Annotation ;
@@ -471,7 +473,8 @@ In this paper, we propose Mob-SSN, an ontology that extends the Semantic Sensor 
 <https://ssn2018.github.io/submissions/3#author-6> a foaf:Person ;
     foaf:name "Sandra Stincic Clarke"@en .
 
-<https://ssn2018.github.io/submissions/3#final> a fabio:DefinitiveVersion .
+<https://ssn2018.github.io/submissions/3#final> a fabio:DefinitiveVersion ;
+    fabio:hasRepresentation <http://ceur-ws.org/Vol-2213/paper6.pdf> .
 
 <https://ssn2018.github.io/submissions/3#review-1> a fabio:Review,
         oa:Annotation ;
@@ -507,7 +510,8 @@ In this paper, we propose Mob-SSN, an ontology that extends the Semantic Sensor 
 <https://ssn2018.github.io/submissions/4#author-4> a foaf:Person ;
     foaf:name "Christian Bonnet"@en .
 
-<https://ssn2018.github.io/submissions/4#final> a fabio:DefinitiveVersion .
+<https://ssn2018.github.io/submissions/4#final> a fabio:DefinitiveVersion ;
+    fabio:hasRepresentation <http://ceur-ws.org/Vol-2213/paper5.pdf> .
 
 <https://ssn2018.github.io/submissions/4#review-1> a fabio:Review,
         oa:Annotation ;
@@ -543,7 +547,8 @@ In this paper, we propose Mob-SSN, an ontology that extends the Semantic Sensor 
 <https://ssn2018.github.io/submissions/5#author-2> a foaf:Person ;
     foaf:name "John K. Zao"@en .
 
-<https://ssn2018.github.io/submissions/5#final> a fabio:DefinitiveVersion .
+<https://ssn2018.github.io/submissions/5#final> a fabio:DefinitiveVersion ;
+    fabio:hasRepresentation <http://ceur-ws.org/Vol-2213/paper3.pdf> .
 
 <https://ssn2018.github.io/submissions/5#review-1> a fabio:Review,
         oa:Annotation ;
@@ -641,7 +646,8 @@ In this paper, we propose Mob-SSN, an ontology that extends the Semantic Sensor 
 <https://ssn2018.github.io/submissions/7#author-5> a foaf:Person ;
     foaf:name "Valentina Ivanova"@en .
 
-<https://ssn2018.github.io/submissions/7#final> a fabio:DefinitiveVersion .
+<https://ssn2018.github.io/submissions/7#final> a fabio:DefinitiveVersion ;
+    fabio:hasRepresentation <http://ceur-ws.org/Vol-2213/paper7.pdf> .
 
 <https://ssn2018.github.io/submissions/7#review-1> a fabio:Review,
         oa:Annotation ;
@@ -656,9 +662,9 @@ In this paper, we propose Mob-SSN, an ontology that extends the Semantic Sensor 
 <https://ssn2018.github.io/submissions/7#review-2> a fabio:Review,
         oa:Annotation ;
     dcterms:rights <https://creativecommons.org/licenses/by/4.0/> ;
-    frbr:realization _:Nd75ec23ed243493b87a9c281b3a48068,
+    frbr:realization _:Nc124d6e8bc9440719aa3fc4438084503,
         <https://ssn2018.github.io/submissions/7#review-2-description> ;
-    oa:hasBody _:Nd75ec23ed243493b87a9c281b3a48068,
+    oa:hasBody _:Nc124d6e8bc9440719aa3fc4438084503,
         <https://ssn2018.github.io/submissions/7#review-2-description> ;
     oa:hasTarget <https://ssn2018.github.io/submissions/SSN2018_paper_7_submitted.pdf> ;
     oa:motivatedBy oa:assessing ;
@@ -676,7 +682,8 @@ In this paper, we propose Mob-SSN, an ontology that extends the Semantic Sensor 
 <https://ssn2018.github.io/submissions/8#author-4> a foaf:Person ;
     foaf:name "Jan Karlshøj"@en .
 
-<https://ssn2018.github.io/submissions/8#final> a fabio:DefinitiveVersion .
+<https://ssn2018.github.io/submissions/8#final> a fabio:DefinitiveVersion ;
+    fabio:hasRepresentation <http://ceur-ws.org/Vol-2213/paper4.pdf> .
 
 <https://ssn2018.github.io/submissions/8#review-1> a fabio:Review,
         oa:Annotation ;
@@ -950,5 +957,5 @@ The paper presents a demonstration on an integration between different datasets 
         <https://ssn2018.github.io/submissions/5#review-3> ;
     fabio:hasRepresentation <https://ssn2018.github.io/submissions/SSN2018_paper_5_submitted.pdf> .
 
-_:Nd75ec23ed243493b87a9c281b3a48068 cito:reviews <https://ssn2018.github.io/submissions/7#preprint> .
+_:Nc124d6e8bc9440719aa3fc4438084503 cito:reviews <https://ssn2018.github.io/submissions/7#preprint> .
 
